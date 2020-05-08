@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Paycompute.Entity;
 using Paycompute.Models;
 using Paycompute.Services;
 using System;
@@ -29,7 +30,40 @@ namespace Paycompute.Controllers
                 Designation = employee.Designation,
                 City = employee.City
             }).ToList();
-            return View();
+            return View(employees);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            var model = new EmployeeCreateViewModel();
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Create(EmployeeCreateViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var employee = new Employee
+                {
+                    Id = model.Id,
+                    EmployeeNo = model.EmployeeNo,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    FullName = model.FullName,
+                    Gender = model.Gender,
+                    Email = model.Email,
+                    DOB = model.DOB,
+                    DateJoined = model.DateJoined,
+                    PANCardNo = model.PANCardNo,
+                    PaymehtMethod = model.PaymehtMethod,
+                    StudentLoan = model.StudentLoan,
+                    UnionMember = model.UnionMember,
+                    Address = model.Address,
+                    City = model.City,
+
+                };
+            }
         }
     }
 }

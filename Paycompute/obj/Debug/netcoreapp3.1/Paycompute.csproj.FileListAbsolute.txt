@@ -90,3 +90,4 @@ C:\Users\sidhartha.rath\source\repos\Paycompute\Paycompute\obj\Debug\netcoreapp3
 C:\Users\sidhartha.rath\source\repos\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Paycompute.dll
 C:\Users\sidhartha.rath\source\repos\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Paycompute.pdb
 C:\Users\sidhartha.rath\source\repos\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Paycompute.genruntimeconfig.cache
+C:\Users\sidhartha.rath\source\repos\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Paycompute.MvcApplicationPartsAssemblyInfo.cs
